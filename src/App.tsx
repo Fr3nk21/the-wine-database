@@ -1,14 +1,30 @@
 import "./styles.css";
 import logo from "./assets/logo.png";
-import { useState } from "react";
+import AuthProvider from "./hooks/AuthProvider";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
+import AuthProvider from "./hooks/AuthProvider";
+import PrivateRoute from "./router/route";
 
 function App() {
   return (
-    <>
+    <div className="App">
+      <Router>
+        <AuthProvider>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route element={<PrivateRoute />}>
+              <Route path="/dashboard" element={<Dashboard />} />
+            </Route>
+            {/* Other routes */}
+          </Routes>
+        </AuthProvider>
+      </Router>
       <Header />
       <Hero />
       <div>Hello Wine Database</div>
-    </>
+    </div>
   );
 }
 
