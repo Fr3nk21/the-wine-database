@@ -1,18 +1,18 @@
-import { useState } from "react";
-import { useAuth } from "../hooks/useAuth";
+import { useState } from 'react';
+import { useAuth } from '../hooks/useAuth';
 export const LoginPage = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const { login } = useAuth();
   const handleLogin = async (e) => {
     e.preventDefault();
     // Here you would usually send a request to your backend to authenticate the user
     // For the sake of this example, we're using a mock authentication
-    if (username === "user" && password === "password") {
+    if (username === 'user' && password === 'password') {
       // Replace with actual authentication logic
       await login({ username });
     } else {
-      alert("Invalid username or password");
+      alert('Invalid username or password');
     }
   };
   return (

@@ -1,19 +1,19 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { useAuth } from "../hooks/useAuth";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../hooks/useAuth';
 
 export const Verify2FA = () => {
   const navigate = useNavigate();
   const { verify2FACode } = useAuth();
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const isValid = await verify2FACode(code);
     if (isValid) {
-      navigate("/secret");
+      navigate('/secret');
     } else {
-      alert("Invalid code. Please try again.");
+      alert('Invalid code. Please try again.');
     }
   };
 
