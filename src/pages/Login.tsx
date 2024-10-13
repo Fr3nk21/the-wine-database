@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
+
 export const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -16,8 +17,11 @@ export const LoginPage = () => {
     }
   };
   return (
-    <div>
-      <form onSubmit={handleLogin}>
+    <div className="bg-red-500 flex justify-center items-center h-screen">
+      <form
+        onSubmit={handleLogin}
+        className="bg-green-500 h-96 w-96 flex flex-col justify-center p-10 rounded-md"
+      >
         <div>
           <label htmlFor="username">Username:</label>
           <input
@@ -25,18 +29,25 @@ export const LoginPage = () => {
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            className="rounded-md w-full mt-3"
           />
         </div>
-        <div>
+        <div className="mt-4">
           <label htmlFor="password">Password:</label>
           <input
             id="password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            className="rounded-md w-full mt-3"
           />
         </div>
-        <button type="submit">Login</button>
+        <button
+          type="submit"
+          className="bg-red-600 px-4 py-2 rounded-md mt-10 hover:bg-yellow-500"
+        >
+          Login
+        </button>
       </form>
     </div>
   );

@@ -6,11 +6,21 @@ function Header() {
       </div>
       <div>
         <ul className="flex flex-row gap-4">
-          <li className="bg-red-500 px-4 py-2 rounded-md">Home</li>
-          <li className="bg-red-500 px-4 py-2 rounded-md">About</li>
-          <li className="bg-red-500 px-4 py-2 rounded-md">Services</li>
-          <li className="bg-red-500 px-4 py-2 rounded-md">Contact</li>
-          <li className="bg-red-500 px-4 py-2 rounded-md">Dashboard</li>
+          <li className="bg-red-500 px-4 py-2 rounded-md">
+            <a href="#">Home</a>
+          </li>
+          <li className="bg-red-500 px-4 py-2 rounded-md">
+            <a href="#">About</a>
+          </li>
+          <li className="bg-red-500 px-4 py-2 rounded-md">
+            <a href="#">Services</a>
+          </li>
+          <li className="bg-red-500 px-4 py-2 rounded-md">
+            <a href="#">Contact</a>
+          </li>
+          <li className="bg-red-500 px-4 py-2 rounded-md">
+            <a href="#">Dashboard</a>
+          </li>
         </ul>
       </div>
     </section>
