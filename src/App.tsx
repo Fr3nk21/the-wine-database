@@ -3,6 +3,7 @@ import { LoginPage } from './pages/Login';
 import { HomePage } from './pages/Home';
 import { Secret } from './pages/Secret';
 import { Verify2FA } from './pages/Verify2FA';
+import Dashboard from './pages/Dashboard';
 
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { AuthProvider } from './hooks/useAuth';
@@ -25,6 +26,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </AuthProvider>
   );
