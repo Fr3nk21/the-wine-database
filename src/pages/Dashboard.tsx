@@ -1,23 +1,9 @@
+import Sidebar from '../components/Sidebar';
+
 function Dashboard() {
   return (
     <div className="bg-green-500 h-screen flex">
-      {/* SIDEBAR */}
-      <div className="bg-red-500 flex flex-col p-20">
-        <div>
-          <img />
-        </div>
-        <div>
-          <h2 className="pb-6">Title of the Dashboard</h2>
-          <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-          </ul>
-        </div>
-        <div className="mt-10">
-          <h3>Title</h3>
-        </div>
-      </div>
+      <Sidebar />
 
       {/* DASHBOARD PAGE */}
       <div className="flex flex-col justify-center p-20">

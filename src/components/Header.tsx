@@ -19,7 +19,7 @@ function Header() {
             <a href="#">Contact</a>
           </li>
           <li className="bg-red-500 px-4 py-2 rounded-md">
-            <a href="http://localhost:5173/login">Dashboard</a>
+            <a href="http://localhost:5173/dashboard">Dashboard</a>
           </li>
         </ul>
       </div>
