@@ -8,10 +8,11 @@ function Sidebar() {
         <h2 className="pb-6">Title of the Dashboard</h2>
         <ul>
           <li>
+            <a href="http://localhost:5173/dashboard">Dashboard</a>
+          </li>
+          <li>
             <a href="http://localhost:5173/wine-list">Wine List</a>
           </li>
-          <li>Link 2</li>
-          <li>Link 3</li>
         </ul>
       </div>
       <div className="mt-10">
