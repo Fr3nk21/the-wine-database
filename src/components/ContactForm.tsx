@@ -1,3 +1,5 @@
+import placeholder from '../assets/photo.png';
+
 function ContactForm() {
   return (
     <section className="flex flex-row h-screen items-center justify-center">
@@ -12,7 +14,7 @@ function ContactForm() {
         <button className="bg-green-500 px-4 py-2 rounded-md">Read More</button>
       </div>
       <div>
-        <img src="./assets/photo.png" alt="photo" />
+        <img src={placeholder} alt="placeholder" className="max-w-96" />
       </div>
     </section>
   );

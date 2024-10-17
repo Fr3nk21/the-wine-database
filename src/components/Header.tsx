@@ -1,8 +1,10 @@
+import logo from '../assets/logo.png';
+
 function Header() {
   return (
     <section className="w-full h-20 bg-yellow-500 flex flex-row justify-between px-6 items-center">
       <div>
-        <img src="./assets/logo.png" alt="logo" />
+        <img src={logo} alt="logo" className="w-10 h-10" />
       </div>
       <div>
         <ul className="flex flex-row gap-4">

@@ -1,8 +1,10 @@
+import logo from '../assets/logo.png';
+
 function Footer() {
   return (
     <div className="flex flex-row justify-center items-center">
       <div className="flex flex-col">
-        <img src="./assets/logo.png" alt="logo" />
+        <img src={logo} alt="logo" className="w-10 h-10" />
         <p className="w-80">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>

@@ -1,8 +1,10 @@
+import placeholder from '../assets/photo.png';
+
 function TextLeft() {
   return (
     <section className="flex flex-row h-screen items-center justify-center">
       <div>
-        <img src="./assets/photo.png" alt="photo" />
+        <img src={placeholder} alt="placeholder" className="max-w-96" />
       </div>
       <div>
         <h2 className="font-bold text-2xl">Title Section</h2>
