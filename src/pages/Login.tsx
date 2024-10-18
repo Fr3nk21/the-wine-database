@@ -1,54 +1,73 @@
-import { useState } from 'react'
-import { useAuth } from '../hooks/useAuth'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export const LoginPage = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const { login } = useAuth()
-  const handleLogin = async (e) => {
-    e.preventDefault()
-    // Here you would usually send a request to your backend to authenticate the user
-    // For the sake of this example, we're using a mock authentication
-    if (username === 'user' && password === 'password') {
-      // Replace with actual authentication logic
-      await login({ username })
-    } else {
-      alert('Invalid username or password')
-    }
-  }
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <div className="bg-red-500 flex justify-center items-center h-screen">
-      <form
-        onSubmit={handleLogin}
-        className="bg-green-500 h-96 w-96 flex flex-col justify-center p-10 rounded-md"
-      >
+    <div className="flex items-center justify-center min-h-screen px-4 py-12 bg-gray-50">
+      <div className="w-full max-w-md space-y-8">
         <div>
-          <label htmlFor="username">Username:</label>
-          <input
-            id="username"
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            className="rounded-md w-full mt-3"
-          />
+          <h2>Sign in</h2>
         </div>
-        <div className="mt-4">
-          <label htmlFor="password">Password:</label>
-          <input
-            id="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="rounded-md w-full mt-3"
-          />
-        </div>
-        <button
-          type="submit"
-          className="bg-red-600 px-4 py-2 rounded-md mt-10 hover:bg-yellow-500"
-        >
-          Login
-        </button>
-      </form>
+        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+          <input type="hidden" name="remember" value="true" />
+          <div className="-space-y-px rounded-md shadow-sm">
+            <div>
+              <label htmlFor="email-address" className="sr-only">
+                Email addess
+              </label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autoComplete="email"
+                required
+                placeholder="Email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div>
+              <label htmlFor="password" className="sr-only">
+                Password
+              </label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autoComplete="current-password"
+                required
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+          </div>
+
+          {error && (
+            <p className="mt-2 text-sm text-center text-red-600">{error}</p>
+          )}
+
+          <div>
+            <button
+              type="submit"
+              className="relative flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md group"
+            >
+              Sign in
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default Login;
