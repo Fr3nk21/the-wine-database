@@ -1,4 +1,4 @@
-import placeholder from '../assets/photo.png';
+import placeholder from '../assets/photo.png'
 
 function TextLeft() {
   return (
@@ -17,7 +17,7 @@ function TextLeft() {
         <button className="bg-green-500 px-4 py-2 rounded-md">Read More</button>
       </div>
     </section>
-  );
+  )
 }
 
-export default TextLeft;
+export default TextLeft

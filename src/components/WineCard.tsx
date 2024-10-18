@@ -1,4 +1,4 @@
-import wineBottleImage from '../assets/wine-bottle.png';
+import wineBottleImage from '../assets/wine-bottle.png'
 
 function WineCard() {
   return (
@@ -13,7 +13,7 @@ function WineCard() {
         </button>
       </div>
     </div>
-  );
+  )
 }
 
-export default WineCard;
+export default WineCard

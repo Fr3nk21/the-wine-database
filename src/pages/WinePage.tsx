@@ -1,4 +1,4 @@
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Sidebar'
 
 const WinePage = () => {
   return (
@@ -17,7 +17,7 @@ const WinePage = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default WinePage;
+export default WinePage

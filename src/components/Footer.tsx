@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.png'
 
 function Footer() {
   return (
@@ -28,7 +28,7 @@ function Footer() {
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

@@ -14,7 +14,7 @@ function CTA() {
         </button>
       </div>
     </section>
-  );
+  )
 }
 
-export default CTA;
+export default CTA

@@ -1,4 +1,4 @@
-import placeholder from '../assets/photo.png';
+import placeholder from '../assets/photo.png'
 
 function ContactForm() {
   return (
@@ -17,7 +17,7 @@ function ContactForm() {
         <img src={placeholder} alt="placeholder" className="max-w-96" />
       </div>
     </section>
-  );
+  )
 }
 
-export default ContactForm;
+export default ContactForm

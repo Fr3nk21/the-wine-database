@@ -1,5 +1,5 @@
-import Sidebar from '../components/Sidebar';
-import WineCard from '../components/WineCard';
+import Sidebar from '../components/Sidebar'
+import WineCard from '../components/WineCard'
 
 const WineList = () => {
   return (
@@ -40,7 +40,7 @@ const WineList = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default WineList;
+export default WineList

@@ -13,7 +13,7 @@ function Hero() {
         <button className="bg-red-500 px-4 py-2 rounded-md">Contact Us</button>
       </div>
     </section>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

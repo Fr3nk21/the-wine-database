@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.png'
 
 function Header() {
   return (
@@ -26,7 +26,7 @@ function Header() {
         </ul>
       </div>
     </section>
-  );
+  )
 }
 
-export default Header;
+export default Header

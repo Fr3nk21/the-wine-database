@@ -32,7 +32,7 @@ function Testimonials() {
         <button className="bg-green-500 px-4 py-2 rounded-md">Read More</button>
       </div>
     </section>
-  );
+  )
 }
 
-export default Testimonials;
+export default Testimonials

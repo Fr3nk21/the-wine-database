@@ -1,8 +1,8 @@
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Sidebar'
 
 function Dashboard() {
   return (
-    <div className="bg-green-500 h-screen flex">
+    <div className="flex h-screen bg-green-500">
       <Sidebar />
 
       {/* DASHBOARD PAGE */}
@@ -19,37 +19,37 @@ function Dashboard() {
         <div className="container mx-auto">
           <div className="grid grid-cols-3 gap-10">
             {/* SECTION 1 */}
-            <div className="bg-orange-500 p-10 rounded-md">
+            <div className="rounded-md bg-orange-500 p-10">
               <h3>Title of section</h3>
               <button>See More</button>
             </div>
 
             {/* SECTION 2 */}
-            <div className="bg-orange-500 p-10 rounded-md">
+            <div className="rounded-md bg-orange-500 p-10">
               <h3>Title of section</h3>
               <button>See More</button>
             </div>
 
             {/* SECTION 3 */}
-            <div className="bg-orange-500 p-10 rounded-md">
+            <div className="rounded-md bg-orange-500 p-10">
               <h3>Title of section</h3>
               <button>See More</button>
             </div>
 
             {/* SECTION 4 */}
-            <div className="bg-orange-500 p-10 rounded-md">
+            <div className="rounded-md bg-orange-500 p-10">
               <h3>Title of section</h3>
               <button>See More</button>
             </div>
 
             {/* SECTION 5 */}
-            <div className="bg-orange-500 p-10 rounded-md">
+            <div className="rounded-md bg-orange-500 p-10">
               <h3>Title of section</h3>
               <button>See More</button>
             </div>
 
             {/* SECTION 6 */}
-            <div className="bg-orange-500 p-10 rounded-md">
+            <div className="rounded-md bg-orange-500 p-10">
               <h3>Title of section</h3>
               <button>See More</button>
             </div>
@@ -57,7 +57,7 @@ function Dashboard() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Dashboard;
+export default Dashboard

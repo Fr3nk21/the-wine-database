@@ -19,7 +19,7 @@ function Sidebar() {
         <h3>Title</h3>
       </div>
     </div>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar
