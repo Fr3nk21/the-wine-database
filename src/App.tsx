@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { HomePage } from './pages/Home';
 import Dashboard from './pages/Dashboard';
@@ -12,23 +12,21 @@ import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="/dashboard"
-          element={
-            <PrivateRoute>
-              <Dashboard />
-            </PrivateRoute>
-          }
-        />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/wine-list" element={<WineList />} />
-        <Route path="/wine-page" element={<WinePage />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<Login />} />
+      <Route
+        path="/dashboard"
+        element={
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        }
+      />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/wine-list" element={<WineList />} />
+      <Route path="/wine-page" element={<WinePage />} />
+    </Routes>
   );
 }
 
