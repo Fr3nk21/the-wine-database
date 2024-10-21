@@ -5,7 +5,18 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "target": "esnext", // Specify ECMAScript target version: 'esnext', 'es6', etc.
+    "module": "commonjs", // Specify module code generation: 'commonjs', 'es6', 'esnext', etc.
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "moduleResolution": "node", // Use Node.js style resolution
+    "resolveJsonModule": true, //Allows importing .json files
+    "isolatedModules": true, // Ensures each file can be compiled in isolation
+    "noEmit": true, // Prevents TypeScript from emitting any compiled JavaScript files
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"], // Specify the root folders or files to include
+  "exclude": ["node_modules"] // Folders or files to exclude from compilation
 }
