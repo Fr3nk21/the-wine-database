@@ -37,9 +37,6 @@ function Sidebar() {
           </li>
         </ul>
       </div>
-      <div className="mt-10">
-        <h3>Title</h3>
-      </div>
     </div>
   );
 }
