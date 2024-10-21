@@ -7,6 +7,11 @@ export default {
         // Add your custom colors
         // customBlue: '#1e3a8a'
         // customGreen: '#10b981'
+        color1: '#F2F0EB',
+        color2: '#D9D7D2',
+        color3: '#BFBEBA',
+        color4: '#A6A4A2',
+        color5: '#8C8C88',
       },
       fontFamily: {
         // Add your custom fonts
