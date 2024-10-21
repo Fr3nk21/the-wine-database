@@ -2,7 +2,7 @@ import { FaBeer } from 'react-icons/fa';
 
 function Sidebar() {
   return (
-    <div className="flex flex-col p-10 bg-red-500">
+    <div className="flex flex-col p-10 border-r-4 bg-color1 border-color2">
       <div>
         <img />
       </div>
@@ -11,29 +11,32 @@ function Sidebar() {
           Welcome to the Wine Database
         </h2>
         <ul>
-          <li className="flex flex-row items-center justify-between mb-4">
-            <a href="http://localhost:5173/" className="text-xl font-normal">
+          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+            <a
+              href="http://localhost:5173/"
+              className="flex flex-row items-center justify-between w-full gap-4 p-4 text-lg font-normal bg-red-500 rounded h-14"
+            >
               Home
+              <FaBeer />
             </a>
-            <FaBeer />
           </li>
-          <li className="flex flex-row items-center justify-between mb-4">
+          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/dashboard"
-              className="text-xl font-normal"
+              className="flex flex-row items-center justify-between w-full gap-4 p-4 text-lg font-normal bg-red-500 rounded h-14"
             >
               Dashboard
+              <FaBeer />
             </a>
-            <FaBeer />
           </li>
-          <li className="flex flex-row items-center justify-between mb-4">
+          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/wine-list"
-              className="text-xl font-normal"
+              className="flex flex-row items-center justify-between w-full gap-4 p-4 text-lg font-normal bg-red-500 rounded h-14"
             >
               Wine List
+              <FaBeer />
             </a>
-            <FaBeer />
           </li>
         </ul>
       </div>

@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar';
 
 function Dashboard() {
   return (
-    <div className="flex h-screen bg-green-500">
+    <div className="flex h-screen bg-color1">
       <Sidebar />
 
       {/* DASHBOARD PAGE */}
