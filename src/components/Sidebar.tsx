@@ -1,3 +1,5 @@
+import { FaBeer } from 'react-icons/fa';
+
 function Sidebar() {
   return (
     <div className="flex flex-col p-10 bg-red-500">
@@ -9,14 +11,29 @@ function Sidebar() {
           Welcome to the Wine Database
         </h2>
         <ul>
-          <li>
-            <a href="http://localhost:5173/">Home</a>
+          <li className="flex flex-row items-center justify-between mb-4">
+            <a href="http://localhost:5173/" className="text-xl font-normal">
+              Home
+            </a>
+            <FaBeer />
           </li>
-          <li>
-            <a href="http://localhost:5173/dashboard">Dashboard</a>
+          <li className="flex flex-row items-center justify-between mb-4">
+            <a
+              href="http://localhost:5173/dashboard"
+              className="text-xl font-normal"
+            >
+              Dashboard
+            </a>
+            <FaBeer />
           </li>
-          <li>
-            <a href="http://localhost:5173/wine-list">Wine List</a>
+          <li className="flex flex-row items-center justify-between mb-4">
+            <a
+              href="http://localhost:5173/wine-list"
+              className="text-xl font-normal"
+            >
+              Wine List
+            </a>
+            <FaBeer />
           </li>
         </ul>
       </div>
