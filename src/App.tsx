@@ -5,7 +5,7 @@ import Dashboard from './pages/Dashboard';
 import WineList from './pages/WineList';
 import WinePage from './pages/WinePage';
 import Login from './pages/Login';
-import PrivateRoute from './components/PrivateRoute';
+// import PrivateRoute from './components/PrivateRoute';
 
 // import './App.css'
 // import logo from "./assets/logo.png";
@@ -18,9 +18,9 @@ function App() {
       <Route
         path="/dashboard"
         element={
-          <PrivateRoute>
-            <Dashboard />
-          </PrivateRoute>
+          // <PrivateRoute>
+          <Dashboard />
+          // </PrivateRoute>
         }
       />
       <Route path="/dashboard" element={<Dashboard />} />
