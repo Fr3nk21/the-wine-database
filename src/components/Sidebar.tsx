@@ -1,11 +1,13 @@
 function Sidebar() {
   return (
-    <div className="flex flex-col p-20 bg-red-500">
+    <div className="flex flex-col p-10 bg-red-500">
       <div>
         <img />
       </div>
       <div>
-        <h2 className="pb-6">Title of the Dashboard</h2>
+        <h2 className="pb-6 text-3xl font-bold">
+          Welcome to the Wine Database
+        </h2>
         <ul>
           <li>
             <a href="http://localhost:5173/">Home</a>
