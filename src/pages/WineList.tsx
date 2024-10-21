@@ -1,9 +1,9 @@
-import Sidebar from '../components/Sidebar'
-import WineCard from '../components/WineCard'
+import Sidebar from '../components/Sidebar';
+import WineCard from '../components/WineCard';
 
 const WineList = () => {
   return (
-    <div className="bg-green-500 h-screen flex">
+    <div className="flex h-screen bg-green-500">
       <Sidebar />
 
       {/* WINE LIST PAGE */}
@@ -40,7 +40,7 @@ const WineList = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WineList
+export default WineList;

@@ -1,6 +1,11 @@
 import { FaBeer } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
 
 function Sidebar() {
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <div className="flex flex-col p-10 border-r-4 bg-color1 border-color2">
       <div>
@@ -14,7 +19,7 @@ function Sidebar() {
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/"
-              className="flex flex-row items-center justify-between w-full gap-4 p-4 text-lg font-normal bg-red-500 rounded h-14"
+              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded bg-red-500 p-4 text-lg font-normal ${isActive('/') ? 'bg-color4 text-white' : 'bg-red-500'}`}
             >
               Home
               <FaBeer />
@@ -23,7 +28,7 @@ function Sidebar() {
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/dashboard"
-              className="flex flex-row items-center justify-between w-full gap-4 p-4 text-lg font-normal bg-red-500 rounded h-14"
+              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded bg-red-500 p-4 text-lg font-normal ${isActive('/dashboard') ? 'bg-color4 text-white' : 'bg-red-500'}`}
             >
               Dashboard
               <FaBeer />
@@ -32,7 +37,7 @@ function Sidebar() {
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/wine-list"
-              className="flex flex-row items-center justify-between w-full gap-4 p-4 text-lg font-normal bg-red-500 rounded h-14"
+              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded bg-red-500 p-4 text-lg font-normal ${isActive('/wine-list') ? 'bg-color4 text-white' : 'bg-red-500'}`}
             >
               Wine List
               <FaBeer />
