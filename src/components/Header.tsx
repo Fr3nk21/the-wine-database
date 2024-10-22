@@ -1,32 +1,32 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 
 function Header() {
   return (
-    <section className="w-full h-20 bg-yellow-500 flex flex-row justify-between px-6 items-center">
+    <section className="flex h-20 w-full flex-row items-center justify-between bg-yellow-500 px-6">
       <div>
-        <img src={logo} alt="logo" className="w-10 h-10" />
+        <img src={logo} alt="logo" className="h-10 w-10" />
       </div>
       <div>
         <ul className="flex flex-row gap-4">
-          <li className="bg-red-500 px-4 py-2 rounded-md">
+          <li className="rounded-md bg-red-500 px-4 py-2">
             <a href="#">Home</a>
           </li>
-          <li className="bg-red-500 px-4 py-2 rounded-md">
+          <li className="rounded-md bg-red-500 px-4 py-2">
             <a href="#">About</a>
           </li>
-          <li className="bg-red-500 px-4 py-2 rounded-md">
+          <li className="rounded-md bg-red-500 px-4 py-2">
             <a href="#">Services</a>
           </li>
-          <li className="bg-red-500 px-4 py-2 rounded-md">
+          <li className="rounded-md bg-red-500 px-4 py-2">
             <a href="#">Contact</a>
           </li>
-          <li className="bg-red-500 px-4 py-2 rounded-md">
+          <li className="rounded-md bg-red-500 px-4 py-2">
             <a href="http://localhost:5173/dashboard">Dashboard</a>
           </li>
         </ul>
       </div>
     </section>
-  )
+  );
 }
 
-export default Header
+export default Header;
