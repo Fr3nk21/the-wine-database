@@ -3,14 +3,14 @@ import WineCard from '../components/WineCard';
 
 const WineList = () => {
   return (
-    <div className="flex h-screen bg-green-500">
+    <div className="flex h-screen bg-color1">
       <Sidebar />
 
       {/* WINE LIST PAGE */}
       <div className="flex flex-col justify-center p-20">
-        <div>
-          <h1>Wine List Page</h1>
-          <p>
+        <div className="mb-10">
+          <h1 className="mb-6 text-3xl font-bold">Wine List Page</h1>
+          <p className="text-lg">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea nostrum
             porro velit nam maxime quas, iste, quod, dolor eum voluptate sit
             placeat ut nemo provident quia ipsum tempora assumenda aut.

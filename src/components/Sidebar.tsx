@@ -7,7 +7,7 @@ function Sidebar() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className="flex flex-col p-10 border-r-4 bg-color1 border-color2">
+    <div className="flex flex-col p-10 border-r-4 border-color2 bg-color1">
       <div>
         <img />
       </div>
@@ -19,7 +19,7 @@ function Sidebar() {
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/"
-              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded bg-red-500 p-4 text-lg font-normal ${isActive('/') ? 'bg-color4 text-white' : 'bg-red-500'}`}
+              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/') ? 'bg-color2' : 'bg-color1'}`}
             >
               Home
               <FaBeer />
@@ -28,7 +28,7 @@ function Sidebar() {
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/dashboard"
-              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded bg-red-500 p-4 text-lg font-normal ${isActive('/dashboard') ? 'bg-color4 text-white' : 'bg-red-500'}`}
+              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/dashboard') ? 'bg-color2' : 'bg-color1'}`}
             >
               Dashboard
               <FaBeer />
@@ -37,7 +37,7 @@ function Sidebar() {
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/wine-list"
-              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded bg-red-500 p-4 text-lg font-normal ${isActive('/wine-list') ? 'bg-color4 text-white' : 'bg-red-500'}`}
+              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-list') ? 'bg-color2' : 'bg-color1'}`}
             >
               Wine List
               <FaBeer />
