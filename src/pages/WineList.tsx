@@ -2,13 +2,35 @@ import { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import WineCard from '../components/WineCard';
 import Search from '../components/SearchField';
-
-// ! Complete the search functionalities
+import { wineTypes } from '../data/wineData';
 
 const WineList = () => {
-  const [searchResults, setSearchResults] = useState([]);
+  const allWines = wineTypes.flatMap(type =>
+    type.varieties.map(variety => ({
+      ...variety,
+      wineType: type.type,
+    }))
+  );
 
-  const handleSearch = searchQuery => {};
+  const [searchResults, setSearchResults] = useState(allWines);
+
+  const handleSearch = searchQuery => {
+    if (!searchQuery.trim()) {
+      setSearchResults(allWines);
+    }
+
+    const filtered = allWines.filter(
+      wine =>
+        wine.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        wine.origin.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        wine.wineType.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        wine.characteristics.flavors.some(flavor =>
+          flavor.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+    );
+
+    setSearchResults(filtered);
+  };
 
   return (
     <div className="flex h-screen bg-color1">
@@ -31,23 +53,23 @@ const WineList = () => {
 
         <div className="container mx-auto">
           <div className="grid grid-cols-3 gap-10">
-            {/* WINE 1 */}
-            <WineCard />
-
-            {/* WINE 2 */}
-            <WineCard />
-
-            {/* WINE 3 */}
-            <WineCard />
-
-            {/* WINE 4 */}
-            <WineCard />
-
-            {/* WINE 5 */}
-            <WineCard />
-
-            {/* WINE 6 */}
-            <WineCard />
+            {searchResults.length > 0 ? (
+              searchResults.map(wine => (
+                <WineCard
+                  key={`${wine.wineType}-${wine.name}`}
+                  name={wine.name}
+                  type={wine.wineType}
+                  origin={wine.origin}
+                  characteristics={wine.characteristics}
+                  foodPairings={wine.foodPairings}
+                  price={wine.averagePrice}
+                />
+              ))
+            ) : (
+              <div className="col-span-3 py-10 text-center text-gray-500">
+                No wines found matching your search.
+              </div>
+            )}
           </div>
         </div>
       </div>
