@@ -1,6 +1,6 @@
 import Sidebar from '../components/Sidebar';
 import WineCard from '../components/WineCard';
-import Search from '../components/Search';
+import Search from '../components/SearchField';
 
 const WineList = () => {
   return (
