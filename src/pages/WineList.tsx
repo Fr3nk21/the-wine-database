@@ -1,5 +1,6 @@
 import Sidebar from '../components/Sidebar';
 import WineCard from '../components/WineCard';
+import Search from '../components/Search';
 
 const WineList = () => {
   return (
@@ -15,6 +16,10 @@ const WineList = () => {
             porro velit nam maxime quas, iste, quod, dolor eum voluptate sit
             placeat ut nemo provident quia ipsum tempora assumenda aut.
           </p>
+        </div>
+
+        <div className="mb-10">
+          <Search />
         </div>
 
         <div className="container mx-auto">
