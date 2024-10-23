@@ -1,8 +1,15 @@
+import { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import WineCard from '../components/WineCard';
 import Search from '../components/SearchField';
 
+// ! Complete the search functionalities
+
 const WineList = () => {
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleSearch = searchQuery => {};
+
   return (
     <div className="flex h-screen bg-color1">
       <Sidebar />
@@ -19,7 +26,7 @@ const WineList = () => {
         </div>
 
         <div className="mb-10">
-          <Search />
+          <Search onSearch={handleSearch} placeholder="Search wine..." />
         </div>
 
         <div className="container mx-auto">
