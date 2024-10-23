@@ -1,4 +1,3 @@
-import { FaBeer } from 'react-icons/fa';
 import { PiHouseLight } from 'react-icons/pi';
 import { LuLayoutDashboard } from 'react-icons/lu';
 import { CiViewList } from 'react-icons/ci';
@@ -16,12 +15,14 @@ function Sidebar() {
 
   return (
     <div
-      className={`flex flex-col border-r-4 border-color2 bg-color1 p-10 transition-all duration-300 ${isOpen ? 'w-96' : 'w-20'}`}
+      className={`flex flex-col overflow-hidden border-r-4 border-color2 bg-color1 px-5 pb-3 pt-5 transition-all duration-300 ease-in-out ${
+        isOpen ? 'w-96 px-5 pb-3' : 'w-20 px-2 pb-3'
+      }`}
     >
       {isOpen ? (
         <ul>
           <div>
-            <img src={logo} alt="logo" className="w-10 h-10 mb-10" />
+            <img src={logo} alt="logo" className="block w-8 h-8 mb-10" />
           </div>
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
@@ -54,7 +55,7 @@ function Sidebar() {
       ) : (
         <ul className="flex flex-col items-center">
           <div>
-            <img src={logo} alt="logo" className="w-10 h-10 mb-10" />
+            <img src={logo} alt="logo" className="w-8 h-8 mb-10" />
           </div>
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
@@ -86,7 +87,7 @@ function Sidebar() {
       {/* Toggle button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 mt-auto ml-auto rounded"
+        className={`mb-3 mt-auto flex flex-row items-center rounded ${isOpen ? 'ml-auto' : 'mx-auto'}`}
         aria-label={isOpen ? 'Close sidebar' : 'Open sidebar'}
       >
         {isOpen ? (
