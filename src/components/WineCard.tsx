@@ -26,10 +26,14 @@ const WineCard: FC<WineCardProps> = ({
   price,
 }) => {
   return (
-    <div className="p-6 bg-white rounded-lg shadow-md">
+    <div className="rounded-lg bg-white p-6 shadow-md">
       <div className="mb-4">
-        <h3 className="text-xl font-semibold">{name}</h3>
-        <span className="text-sm text-gray-500">{type}</span>
+        <h3 className="mb-2 text-2xl font-semibold">{name}</h3>
+        <span
+          className={`rounded px-2 py-1 text-sm text-gray-500 text-white ${type === 'White' ? 'bg-amber-500' : 'bg-red-500'}`}
+        >
+          {type}
+        </span>
       </div>
 
       <div className="mb-3">
@@ -57,7 +61,7 @@ const WineCard: FC<WineCardProps> = ({
         <p className="text-sm text-gray-600">{foodPairings.join(', ')}</p>
       </div>
 
-      <div className="flex items-center justify-between mt-4">
+      <div className="mt-4 flex items-center justify-between">
         <span className="text-lg font-bold">${price}</span>
       </div>
     </div>
