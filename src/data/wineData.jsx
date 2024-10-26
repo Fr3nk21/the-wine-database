@@ -2,7 +2,8 @@ export const wineTypes = [
   {
     id: 1,
     type: 'Red',
-    description: 'Full-bodied wines with rich flavors',
+    description:
+      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla pede sit amet augue. Praesent turpis. Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla pede sit amet augue. Praesent turpis. Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.',
     varieties: [
       {
         name: 'Cabernet Sauvignon',
@@ -45,7 +46,8 @@ export const wineTypes = [
   {
     id: 2,
     type: 'White',
-    description: 'Crisp and refreshing wines',
+    description:
+      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla pede sit amet augue. Praesent turpis. Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla pede sit amet augue. Praesent turpis. Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.',
     varieties: [
       {
         name: 'Chardonnay',
@@ -76,11 +78,32 @@ export const wineTypes = [
   {
     id: 3,
     type: 'Sparkling',
-    description: 'Effervescent wines perfect for celebrations',
+    description:
+      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla pede sit amet augue. Praesent turpis. Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla pede sit amet augue. Praesent turpis. Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.',
     varieties: [
       {
         name: 'Champagne',
         origin: 'Champagne, France',
+        characteristics: {
+          body: 'Light',
+          tannins: 'None',
+          acidity: 'High',
+          flavors: ['Apple', 'Citrus', 'Toast'],
+        },
+        foodPairings: ['Oysters', 'Caviar', 'Light Appetizers'],
+        averagePrice: 50,
+      },
+    ],
+  },
+  {
+    id: 3,
+    type: 'Sparkling',
+    description:
+      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla pede sit amet augue. Praesent turpis. Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum fringilla pede sit amet augue. Praesent turpis. Etiam feugiat lorem non metus. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.',
+    varieties: [
+      {
+        name: 'Champagne',
+        origin: 'Italy',
         characteristics: {
           body: 'Light',
           tannins: 'None',

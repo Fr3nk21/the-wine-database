@@ -1,14 +1,16 @@
 import { useState } from 'react';
+import { WineType, WineVariety } from '../types/wine';
 import Sidebar from '../components/Sidebar';
 import WineCard from '../components/WineCard';
 import Search from '../components/SearchField';
 import { wineTypes } from '../data/wineData';
 
 const WineList = () => {
-  const allWines = wineTypes.flatMap((type: string) =>
-    type.varieties.map((variety: object) => ({
+  const allWines = wineTypes.flatMap((type: WineType) =>
+    type.varieties.map((variety: WineVariety) => ({
       ...variety,
       wineType: type.type,
+      description: type.description,
     }))
   );
 
@@ -17,6 +19,7 @@ const WineList = () => {
   const handleSearch = (searchQuery: string) => {
     if (!searchQuery.trim()) {
       setSearchResults(allWines);
+      return;
     }
 
     const filtered = allWines.filter(
@@ -33,7 +36,7 @@ const WineList = () => {
   };
 
   return (
-    <div className="flex w-full h-screen overflow-hidden bg-color1">
+    <div className="flex h-screen w-full overflow-hidden bg-color1">
       <Sidebar />
 
       {/* WINE LIST PAGE */}
@@ -63,6 +66,7 @@ const WineList = () => {
                     key={`${wine.wineType}-${wine.name}`}
                     name={wine.name}
                     type={wine.wineType}
+                    description={wine.description}
                     origin={wine.origin}
                     characteristics={wine.characteristics}
                     foodPairings={wine.foodPairings}
@@ -70,7 +74,7 @@ const WineList = () => {
                   />
                 ))
               ) : (
-                <div className="py-10 text-center text-gray-500 col-span-full">
+                <div className="col-span-full py-10 text-center text-gray-500">
                   No wines found matching your search.
                 </div>
               )}
