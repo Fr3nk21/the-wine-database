@@ -5,6 +5,8 @@ import Dashboard from './pages/Dashboard';
 import WineList from './pages/WineList';
 import WinePage from './pages/WinePage';
 import Login from './pages/Login';
+import WineStock from './pages/WineStock';
+
 // import PrivateRoute from './components/PrivateRoute';
 
 // import './App.css'
@@ -26,6 +28,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/wine-list" element={<WineList />} />
       <Route path="/wine-page" element={<WinePage />} />
+      <Route path="/wine-stock" element={<WineStock />} />
     </Routes>
   );
 }

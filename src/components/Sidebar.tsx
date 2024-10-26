@@ -51,6 +51,15 @@ function Sidebar() {
               <CiViewList />
             </a>
           </li>
+          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+            <a
+              href="http://localhost:5173/wine-stock"
+              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
+            >
+              Wine Stock
+              <CiViewList />
+            </a>
+          </li>
         </ul>
       ) : (
         <ul className="flex flex-col items-center">
@@ -77,6 +86,14 @@ function Sidebar() {
             <a
               href="http://localhost:5173/wine-list"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-list') ? 'bg-color2' : 'bg-color1'}`}
+            >
+              <CiViewList />
+            </a>
+          </li>
+          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+            <a
+              href="http://localhost:5173/wine-stock"
+              className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               <CiViewList />
             </a>
