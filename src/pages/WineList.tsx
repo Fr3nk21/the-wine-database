@@ -43,7 +43,7 @@ const WineList = () => {
       <div className="flex-1 overflow-y-auto">
         <div className="p-20">
           <div className="mb-10">
-            <h1 className="mb-6 text-3xl font-bold">Wine List Page</h1>
+            <h1 className="mb-6 text-3xl font-bold">Product Catalog</h1>
             <p className="text-lg">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
               nostrum porro velit nam maxime quas, iste, quod, dolor eum
