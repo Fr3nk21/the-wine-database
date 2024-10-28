@@ -59,7 +59,7 @@ function Sidebar() {
           {/* PRODUCT CATALOG */}
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-list"
+              href="http://localhost:5173/product-catalog"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-list') ? 'bg-color2' : 'bg-color1'}`}
             >
               Product Catalog
@@ -68,48 +68,48 @@ function Sidebar() {
           </li>
 
           {/* INVENTORY MANAGEMENT */}
-          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-stock"
+              href="http://localhost:5173/inventory-management"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               Inventory Management
               <CiViewList />
             </a>
-          </li>
+          </li> */}
 
           {/* ORDER MANAGEMENT */}
-          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-stock"
+              href="http://localhost:5173/order-management"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               Order Management
               <CiViewList />
             </a>
-          </li>
+          </li> */}
 
           {/* ANALYTICS & REPORTS */}
-          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-stock"
+              href="http://localhost:5173/analytics-and-reports"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               Analytics & Reports
               <CiViewList />
             </a>
-          </li>
+          </li> */}
 
           {/* PARTNER MANAGEMENT */}
-          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-stock"
+              href="http://localhost:5173/partner-management"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               Partner Management
               <CiViewList />
             </a>
-          </li>
+          </li> */}
         </ul>
       ) : (
         // CLOSED SIDEBAR
@@ -141,7 +141,7 @@ function Sidebar() {
           {/* PRODUCT CATALOG */}
           <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-list"
+              href="http://localhost:5173/product-catalog"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-list') ? 'bg-color2' : 'bg-color1'}`}
             >
               <CiViewList />
@@ -149,44 +149,44 @@ function Sidebar() {
           </li>
 
           {/* INVENTORY MANAGEMENT */}
-          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-stock"
+              href="http://localhost:5173/inventory-management"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               <CiViewList />
             </a>
-          </li>
+          </li> */}
 
           {/* ORDER MANAGEMENT */}
-          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-stock"
+              href="http://localhost:5173/order-management"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               <CiViewList />
             </a>
-          </li>
+          </li> */}
 
           {/* ANALYTiCS AND REPORTS */}
-          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-stock"
+              href="http://localhost:5173/analytics-and-reports"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               <CiViewList />
             </a>
-          </li>
+          </li> */}
 
           {/* PARTNER MANAGEMENT */}
-          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
-              href="http://localhost:5173/wine-stock"
+              href="http://localhost:5173/partner-management"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               <CiViewList />
             </a>
-          </li>
+          </li> */}
         </ul>
       )}
 

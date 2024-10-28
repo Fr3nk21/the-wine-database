@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { HomePage } from './pages/Home';
 import Dashboard from './pages/Dashboard';
-import WineList from './pages/WineList';
+import ProductCatalog from './pages/ProductCatalog';
 import WinePage from './pages/WinePage';
 import Login from './pages/Login';
 import WineStock from './pages/WineStock';
@@ -26,7 +26,7 @@ function App() {
         }
       />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/wine-list" element={<WineList />} />
+      <Route path="/product-catalog" element={<ProductCatalog />} />
       <Route path="/wine-page" element={<WinePage />} />
       <Route path="/wine-stock" element={<WineStock />} />
     </Routes>
