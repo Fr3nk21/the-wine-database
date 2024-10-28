@@ -39,7 +39,7 @@ const WineList = () => {
     <div className="flex h-screen w-full overflow-hidden bg-color1">
       <Sidebar />
 
-      {/* WINE LIST PAGE */}
+      {/* PRODUCT CATALOG PAGE */}
       <div className="flex-1 overflow-y-auto">
         <div className="p-20">
           <div className="mb-10">
