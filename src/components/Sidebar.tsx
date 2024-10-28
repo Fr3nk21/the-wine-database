@@ -68,7 +68,7 @@ function Sidebar() {
           </li>
 
           {/* INVENTORY MANAGEMENT */}
-          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/inventory-management"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
@@ -76,7 +76,7 @@ function Sidebar() {
               Inventory Management
               <CiViewList />
             </a>
-          </li> */}
+          </li>
 
           {/* ORDER MANAGEMENT */}
           {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
@@ -149,14 +149,14 @@ function Sidebar() {
           </li>
 
           {/* INVENTORY MANAGEMENT */}
-          {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
+          <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">
             <a
               href="http://localhost:5173/inventory-management"
               className={`flex h-14 w-full flex-row items-center justify-between gap-4 rounded p-4 text-lg font-normal hover:bg-color2 ${isActive('/wine-stock') ? 'bg-color2' : 'bg-color1'}`}
             >
               <CiViewList />
             </a>
-          </li> */}
+          </li>
 
           {/* ORDER MANAGEMENT */}
           {/* <li className="flex flex-row items-center justify-between mb-4 rounded bg-color2 active:bg-color4">

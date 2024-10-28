@@ -1,8 +1,8 @@
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/Sidebar';
 
-const WinePage = () => {
+const InvetoryManagement = () => {
   return (
-    <div className="bg-green-500 h-screen flex">
+    <div className="flex h-screen bg-green-500">
       <Sidebar />
 
       {/* WINE NAME */}
@@ -17,7 +17,7 @@ const WinePage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WinePage
+export default InvetoryManagement;
